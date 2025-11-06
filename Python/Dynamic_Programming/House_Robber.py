@@ -9,6 +9,7 @@ class Solution:
         
         for i in range(2, len(nums)):
             max_money[i] = max(max_money[i-1], nums[i] + max_money[i-2])
+            
         return max_money[-1]
         
         
