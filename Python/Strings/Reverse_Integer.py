@@ -9,7 +9,6 @@ class Solution:
         
         while x != 0:
             pop = x % 10    #extracts last digit
-            
             x //= 10    #removes last digit
             
             if rev > (MAX - pop) // 10: #checks if rev is Greater than the Max number minus the last digit with the last digit removed
