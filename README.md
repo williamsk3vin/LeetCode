@@ -1,3 +1,3 @@
 # LeetCode
 How I solved specific leetcode problems
-using Python, Pandas, and SQL 
+using Python, Pandas, and SQL. 
