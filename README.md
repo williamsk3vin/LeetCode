@@ -1,3 +1,3 @@
 # LeetCode
-How I managed to solve specific leetcode problems
+How I managed to solve leetcode problems
 using Python, Pandas, and SQL. 
