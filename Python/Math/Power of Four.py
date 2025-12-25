@@ -3,7 +3,7 @@ class Solution:
         if n < 1:
             return False
         
-        low = 0
+        low = 0 
         high = int(log(n, 4)) + 1
         
         while low <= high:
