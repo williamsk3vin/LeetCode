@@ -17,7 +17,7 @@ class Solution:
                 low = mid + 1
         return False
             
-#An interesting Solution
+#An interesting Solution. 
 class Solution:
     def isPowerOfFour(self, n: int) -> bool:
         return n > 0 and (n & (n - 1)) == 0 and (n & 0x55555555) != 0
