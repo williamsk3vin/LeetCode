@@ -11,7 +11,7 @@ class Solution:
             stack.append(nums)
         
         for idx , nums in enumerate(nums1):
-            if nums in maps.keys():
+            if nums in maps:
                 greaterElement[idx] = maps[nums]
 
         return greaterElement       
