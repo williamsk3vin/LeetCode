@@ -24,3 +24,24 @@ class Solution:
             return True
         else:
             return False
+
+
+# O(n)
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        def helper(root: Optional[TreeNode]) -> int:
+            if root is None:
+                return 0
+            
+            left = helper(root.left)
+            if left == -1:
+                return -1
+            right = helper(root.right)
+            if right == -1:
+                return -1
+
+            if abs(left - right) > 1:
+                return -1
+
+            return 1 + max(left, right)
+        return helper(root) != -1
