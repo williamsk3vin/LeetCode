@@ -1,3 +1,27 @@
+class Solution:
+    def maxLevelSum(self, root: Optional[TreeNode]) -> int:
+        if root is None:
+            return []
+        result = []
+        queue = [root]
+
+        while queue:
+            level_size = len(queue)
+            level = []
+
+            for _ in range(level_size):
+                node = queue.pop(0)
+                level.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            result.append(sum(level))
+        max_level = max(result)
+        return result.index(max_level) + 1
+
+
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
